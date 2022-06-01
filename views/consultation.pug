@@ -1,0 +1,23 @@
+extends layout 
+
+block layout-block 
+    form(id="conForm",name="f_conFrom")
+        div.container
+            div.booking
+                h2 Book For Consultation
+                input(type ="text",id="name", name="f_name",placeholder ="Your Name Here*")
+                input(type ="text",id="mail", name ="f_mail",placeholder ="Email*")
+                input(type ="number",id="phone",name = "f_name",placeholder ="Phone number")
+                textarea(id ="textloc", name="f_textloc", rows="5", placeholder = "What event are you planning to attend?") 
+                button#conBtn Book Now
+            .location 
+                h3 LOCATION 
+                p We are located at 32 James Curding Street,Northyork 
+                p Toronto, Ontario 
+                h3 WORKING HOURS 
+                p Monday - Friday
+                p Time - 9:00am-7:00pm 
+                p Saturday 
+                p Time - 10:00-6:00pm
+                p Sunday 
+                p Time - Closed

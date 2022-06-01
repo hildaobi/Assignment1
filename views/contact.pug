@@ -1,0 +1,17 @@
+extends layout 
+
+block layout-block 
+    form(id="formMsg",name="f_formMsg")
+        div.container
+            div.booking
+                h2   CONTACT US VIA MAIL 
+                input(type ="text",id="name", name="f_name",placeholder ="Your Name Here*")
+                input(type ="text",id="mail", name ="f_mail",placeholder ="Email*")
+                input(type ="number",id="phone",name = "f_name",placeholder ="Phone number")
+                textarea(id ="textloc", name="f_textloc", rows="5", placeholder = "What event are you planning to attend?") 
+                button.bookBtn SEND
+            .location 
+                h2 SPEAK TO AN EXPERT 
+                h3 PHONE NUMBER
+                    span#cell +1234567890
+                h3 Whatsapp Number +0987654321

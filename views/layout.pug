@@ -1,0 +1,49 @@
+block variables 
+
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        title Naija Bride
+        meta(name="viewport", content="width=device-width")
+        link(rel="stylesheet", href="/css/styles.css")
+    body
+        header#header 
+            div#welcome
+                p Free shipping for orders above $200
+            #logo 
+                img(src="/images/logo.png", alt="comapany logo", height=100)
+                p Gele
+                form(id="form1", name="f_form")
+                    div.form
+                        input(type="search", id="search", name="f_search", placeholder="Search")
+                        button#goBtn Go! 
+            h1 GELE GURU
+            nav(id="main-nav", aria-label="Main navigation")
+                ul 
+                    li 
+                        a(href="/") Home
+                    li 
+                        a(href="/about") About
+                    li 
+                        a(href="/consultation") Consultation
+                    li 
+                        a(href="/contact") Contact us 
+            
+            div#mainimg
+                img(src="images/gele6.jpg")
+                //https://www.pinterest.com/pin/729020258442908698/
+                .company 
+                    p  Gele Guru serving you with gele that would make you the talk of any event. Let's make you stand out with Gele at it's finest !!!
+               
+        main#main 
+            block layout-block
+            //main content
+        footer#footer
+            #footer-div 
+                a(href="contact.pug") 
+            nav#footer-nav 
+          
+            p &copy;Copyright CatsyStan, 2022.      
+
+

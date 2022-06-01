@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body,htm{
+    background-color: black;
+    color: white;
+    
+    
+}
+#welcome{
+    background-color: #D89216;
+    height:30px;
+    text-align: center;
+    font-size: 25px;
+    
+
+}
+#header{
+    margin-bottom: 30px;
+}
+#logo{
+    position:relative ;
+}
+#logo img{
+    z-index:0;
+
+}
+#logo p{
+    z-index: 1;
+    position:absolute;
+    top: 1%;
+    font-size: 30px;
+    margin-left: 35px;
+    transform:rotate(-30deg);
+    color:#D89216;
+}
+.form{
+    float:right;
+}
+#search{
+    padding:5px;
+    width: 400px;
+}
+#goBtn{
+    padding:5px;
+}
+#main-nav{
+   font-size: 30px;
+    margin:10px;
+}
+#main-nav ul{
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+}
+#main-nav ul li{
+    display: inline ;
+ 
+}
+
+a:link{
+    color:#D89216;
+    text-decoration: none;
+}
+a:visited{
+    color:#D89216; 
+}
+#mainimg{
+    display:flex;
+    flex-flow: row wrap;
+}
+#mainimg img{
+    flex:2 0 0 ;
+    height:700px;
+}
+.company{
+    background-color: #D89216 ;
+    color: white;
+    height: 700px;
+    flex:1 0 0 ;
+}
+.company p{
+   
+    font-family: 'Patua one' ;
+    font-weight: 900;
+    font-size: 50px;
+    color:#310404;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 ;
+    width: 400px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: arial;
+    color: #D89216;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #D89216;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    
+  }
+.card img{
+     width:400px;
+     height: 500px; 
+  }
+.product{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin:10px;
+  }
+
+#footer{
+      background-color: #D89216;
+      height: 100px;
+  }
+  /*booking*/
+.container{
+    display:flex;
+    flex-flow: row wrap;
+    gap:50px;
+}
+.booking, .location{
+     min-height: 600px; 
+     flex: 1 0 0;
+     
+}
+.booking  input{
+    display: block;
+    padding: 8px;
+    width: 50%;
+    color :gray;
+    margin:15px;
+   
+
+}
+#textloc{
+    display: block;
+    padding: 8px;
+    width: 50%;
+    color :gray;
+    margin:15px;
+
+}
+.bookBtn, #conBtn{
+    background-color: #D89216;
+    color:white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 42%;
+    font-size: 20px;
+}
+.booking p, .location p{
+    font-size:20px;
+}
+
+@media screen  and (max-width: 768px)
+{
+    .product{
+        display: grid;
+        grid-template-columns: auto auto ;
+        margin:5px;
+    }
+    
+    #mainimg{
+        display:block;
+    }
+    #mainimg img{
+        width:100%
+    }
+}
+
+@media screen and (max-width:480px)
+{
+    .product{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .booking, .location{
+       flex: 1 0 50%;
+    }
+    #header{
+        width: fit-content;;
+    }
+    #main-nav ul li{
+     
+       display: block;
+     
+    }
+    
+}
+ 
+
+  
