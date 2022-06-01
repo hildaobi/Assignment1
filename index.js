@@ -17,7 +17,7 @@ app.get("/consultation", (request,response)=>{
 });
 
 app.get("/contact", (request,response)=>{
-    response.render("contact",{ title:"Contact us"})
+    response.render("contnodeact",{ title:"Contact us"})
 });
 
 app.get("/about", (request,response)=>{
